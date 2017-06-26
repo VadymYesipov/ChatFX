@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegistrationController">
+    <top>
+        <Label fx:id="signUpLabel" text="Sign up" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="20.0" />
+            </BorderPane.margin>
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="newLoginField" focusTraversable="false" promptText="Логин">
+                    <VBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <CustomPasswordField fx:id="newPasswordField" focusTraversable="false" promptText="Пароль">
+                    <VBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" />
+                    </VBox.margin>
+                </CustomPasswordField>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="50.0" top="50.0" />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+    <bottom>
+        <Button fx:id="newSignUpButton" mnemonicParsing="false" onAction="#register" text="Зарегестрировать" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" />
+            </BorderPane.margin>
+        </Button>
+    </bottom>
+</BorderPane>
